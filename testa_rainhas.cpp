@@ -48,3 +48,17 @@ TEST_CASE("Teste de solução inválida do tabuleiro ou rainhas") {
     REQUIRE(verifica_soluc(board) == -1);
 }
 
+TEST_CASE("Teste de solução inválida do tabuleiro ou rainhas") {
+    std::vector<int> board = {
+        1, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 1, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 1, 0, 0,
+        0, 0, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
+        0, 1, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 1, 1, 0
+    };
+
+    REQUIRE(verifica_soluc(board) == -1);
+}
