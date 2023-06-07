@@ -4,7 +4,7 @@
 #include "rainhas.hpp"
 
 TEST_CASE("Teste de solução válida das 8 damas") {
-    std::vector<int> board = {
+    std::vector<int> tabuleiro = {
         1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 1, 0,
         0, 0, 0, 0, 1, 0, 0, 0,
@@ -15,11 +15,11 @@ TEST_CASE("Teste de solução válida das 8 damas") {
         0, 0, 1, 0, 0, 0, 0, 0
     };
 
-    REQUIRE(verifica_soluc(board) == 1);
+    REQUIRE(verifica_soluc(tabuleiro) == 1);
 }
 
 TEST_CASE("Teste de validação do tabuleiro inválido: solução inválida") {
-    std::vector<int> board = {
+    std::vector<int> tabuleiro = {
         1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 1, 0, 0, 0, 
         0, 0, 0, 0, 0, 0, 0, 1,
@@ -30,11 +30,11 @@ TEST_CASE("Teste de validação do tabuleiro inválido: solução inválida") {
         1, 0, 0, 0, 0, 0, 0, 0
     };
 
-    REQUIRE(verifica_soluc(board) == 0);
+    REQUIRE(verifica_soluc(tabuleiro) == 0);
 }
 
 TEST_CASE("Teste de solução inválida do tabuleiro ou rainhas") {
-    std::vector<int> board = {
+    std::vector<int> tabuleiro = {
         1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
@@ -45,11 +45,11 @@ TEST_CASE("Teste de solução inválida do tabuleiro ou rainhas") {
         0, 0, 0, 1, 1, 0
     };
 
-    REQUIRE(verifica_soluc(board) == -1);
+    REQUIRE(verifica_soluc(tabuleiro) == -1);
 }
 
 TEST_CASE("Teste de solução válida das 8 damas 4") {
-    std::vector<int> tab = {
+    std::vector<int> tabuleiro = {
         1, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
@@ -60,11 +60,11 @@ TEST_CASE("Teste de solução válida das 8 damas 4") {
         0, 0, 0, 1, 0, 0, 0, 0
     };
 
-    REQUIRE(verifica_soluc(tab) == 1);
+    REQUIRE(verifica_soluc(tabuleiro) == 1);
 }
 
 TEST_CASE("Segundo Teste de solução válida das 8 damas") {
-    std::vector<int> tab = {
+    std::vector<int> tabuleiro = {
         0, 0, 0, 1, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 1, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
@@ -75,11 +75,11 @@ TEST_CASE("Segundo Teste de solução válida das 8 damas") {
         0, 0, 0, 0, 0, 1, 0, 0
     };
 
-    REQUIRE(verifica_soluc(tab) == 1);
+    REQUIRE(verifica_soluc(tabuleiro) == 1);
 }
 
 TEST_CASE("Tercerio Teste de solução válida das 8 damas") {
-    std::vector<int> tab = {
+    std::vector<int> tabuleiro = {
         0, 0, 0, 0, 1, 0, 0, 0,
         0, 1, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 1, 0, 0, 0, 0,
@@ -90,11 +90,11 @@ TEST_CASE("Tercerio Teste de solução válida das 8 damas") {
         1, 0, 0, 0, 0, 0, 0, 0
     };
 
-    REQUIRE(verifica_soluc(tab) == 1);
+    REQUIRE(verifica_soluc(tabuleiro) == 1);
 }
 
 TEST_CASE("Quarto Teste de solução válida das 8 damas") {
-    std::vector<int> tab = {
+    std::vector<int> tabuleiro = {
         0, 0, 0, 1, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
@@ -105,11 +105,11 @@ TEST_CASE("Quarto Teste de solução válida das 8 damas") {
         0, 1, 0, 0, 0, 0, 0, 0
     };
 
-    REQUIRE(verifica_soluc(tab) == 1);
+    REQUIRE(verifica_soluc(tabuleiro) == 1);
 }
 
 TEST_CASE("Quinto Teste de solução válida das 8 damas") {
-    std::vector<int> tab = {
+    std::vector<int> tabuleiro = {
         0, 0, 1, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
@@ -120,11 +120,11 @@ TEST_CASE("Quinto Teste de solução válida das 8 damas") {
         0, 1, 0, 0, 0, 0, 0, 0
     };
 
-    REQUIRE(verifica_soluc(tab) == 1);
+    REQUIRE(verifica_soluc(tabuleiro) == 1);
 }
 
 TEST_CASE("Sexto Teste de solução válida das 8 damas") {
-    std::vector<int> tab = {
+    std::vector<int> tabuleiro = {
         0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
@@ -135,11 +135,11 @@ TEST_CASE("Sexto Teste de solução válida das 8 damas") {
         0, 1, 0, 0, 0, 0, 0, 0
     };
 
-    REQUIRE(verifica_soluc(tab) == 1);
+    REQUIRE(verifica_soluc(tabuleiro) == 1);
 }
 
 TEST_CASE("Setimo Teste de solução válida das 8 damas") {
-    std::vector<int> tab = {
+    std::vector<int> tabuleiro = {
         0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 1, 0,
         0, 0, 0, 1, 0, 0, 0, 0,
@@ -150,5 +150,20 @@ TEST_CASE("Setimo Teste de solução válida das 8 damas") {
         0, 1, 0, 0, 0, 0, 0, 0
     };
 
-    REQUIRE(verifica_soluc(tab) == 1);
+    REQUIRE(verifica_soluc(tabuleiro) == 1);
+}
+
+TEST_CASE("Oitavo Teste de solução válida das 8 damas") {
+    std::vector<int> tabuleiro = {
+        0, 0, 0, 1, 0, 0, 0, 0,
+        1, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 1, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 1, 0, 0,
+        0, 0, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
+        0, 1, 0, 0, 0, 0, 0, 0
+    };
+
+    REQUIRE(verifica_soluc(tabuleiro) == 1);
 }
