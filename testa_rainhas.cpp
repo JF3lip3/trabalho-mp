@@ -257,3 +257,18 @@ TEST_CASE("Terceiro Teste de validação do tab inválido: solução inválida")
 
     REQUIRE(verifica_soluc(tabuleiro) == 0);
 }
+
+TEST_CASE("Quarto Teste de validação do tab inválido: solução inválida") {
+    std::vector<int> tabuleiro = {
+        0, 1, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 1, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 1, 0, 0,
+        0, 0, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
+        0, 1, 0, 0, 0, 0, 0, 0,
+        0, 0, 1, 0, 0, 0, 0, 0
+    };
+
+    REQUIRE(verifica_soluc(tabuleiro) == 0);
+}
