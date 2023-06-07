@@ -1,8 +1,8 @@
 // Copyright[2023] <Joao Felipe Slva Pereira>
-#define CATCH_CONFIG_MAIN
-#include "catch.hpp"
 #include <vector>
 #include "rainhas.hpp"
+#include "catch.hpp"
+#define CATCH_CONFIG_MAIN
 
 TEST_CASE("Teste de solução válida das 8 damas") {
     std::vector<int> tabuleiro = {

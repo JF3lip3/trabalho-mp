@@ -11,7 +11,7 @@ test: testa_rainhas
 	./testa_rainhas
 	
 cpplint: testa_rainhas.cpp   rainhas.cpp rainhas.hpp
-	cpplint   --exclude=catch.hpp  *.*
+	cpplint  --linelength=120 --exclude=catch.hpp *.cpp
 	
 gcov: testa_rainhas.cpp   rainhas.cpp rainhas.hpp 
 	g++ -std=c++11 -Wall -Wall -fprofile-arcs -ftest-coverage -c rainhas.cpp
