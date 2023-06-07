@@ -62,3 +62,18 @@ TEST_CASE("Teste de solução válida das 8 damas 2") {
 
     REQUIRE(verifica_soluc(tab) == 1);
 }
+
+TEST_CASE("Segundo Teste de solução válida das 8 damas 3") {
+    std::vector<int> tab = {
+        0, 0, 0, 1, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
+        0, 0, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 1, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 1, 0, 0, 0,
+        1, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 1, 0, 0
+    };
+
+    REQUIRE(verifica_soluc(tab) == 1);
+}
