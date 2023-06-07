@@ -451,3 +451,18 @@ TEST_CASE("16° Teste de validação do tab inválido: solução inválida") {
 
     REQUIRE(verifica_soluc(tabuleiro) == 0);
 }
+
+TEST_CASE("Teste de solução inválida do tab ou rainhas") {
+    std::vector<int> tabuleiro = {
+        1, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 1, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 1, 0, 0,
+        0, 0, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
+        0, 1, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 1, 1, 0
+    };
+
+    REQUIRE(verifica_soluc(tabuleiro) == -1);
+}
