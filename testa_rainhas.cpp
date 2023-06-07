@@ -212,3 +212,18 @@ TEST_CASE("Decimo segundo Teste de solução válida das 8 damas") {
 
     REQUIRE(verifica_soluc(tabuleiro) == 1);
 }
+
+TEST_CASE("Teste de validação do tab inválido: solução inválida") {
+    std::vector<int> tabuleiro = {
+        1, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 1, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 1,
+        0, 0, 0, 0, 0, 1, 0, 0,
+        0, 0, 1, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 1, 0,
+        0, 1, 0, 0, 0, 0, 0, 0,
+        1, 0, 0, 0, 0, 0, 0, 0
+    };
+
+    REQUIRE(verifica_soluc(tabuleiro) == 0);
+}
