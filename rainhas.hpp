@@ -1,3 +1,4 @@
+// Copyright[2023] <Joao Felipe Slva Pereira>
 #ifndef RAINHAS_HPP
 #define RAINHAS_HPP
 

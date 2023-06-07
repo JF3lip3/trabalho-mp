@@ -1,5 +1,6 @@
+// Copyright[2023] <Joao Felipe Slva Pereira>
 #include <vector>
-#include "rainhas.hpp"
+#include "./rainhas.hpp"
 #include <algorithm>
 
 bool posic_segura(const std::vector<std::vector<int>>& tabuleiro, int linha, int col) {

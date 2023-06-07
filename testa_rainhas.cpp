@@ -1,3 +1,4 @@
+// Copyright[2023] <Joao Felipe Slva Pereira>
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 #include <vector>
