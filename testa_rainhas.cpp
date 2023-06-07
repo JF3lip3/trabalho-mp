@@ -1,7 +1,7 @@
-// Copyright[2023] <Joao Felipe Slva Pereira>
+// Copyright[2023] <Joao Felipe Silva Pereira>
 #include <vector>
-#include "rainhas.hpp"
-#include "catch.hpp"
+#include "./rainhas.hpp"
+#include "./catch.hpp"
 #define CATCH_CONFIG_MAIN
 
 TEST_CASE("Teste de solução válida das 8 damas") {
@@ -22,7 +22,7 @@ TEST_CASE("Teste de solução válida das 8 damas") {
 TEST_CASE("Teste de validação do tabuleiro inválido: solução inválida") {
     std::vector<int> tabuleiro = {
         1, 0, 0, 0, 0, 0, 0, 0,
-        0, 0, 0, 0, 1, 0, 0, 0, 
+        0, 0, 0, 0, 1, 0, 0, 0,
         0, 0, 0, 0, 0, 0, 0, 1,
         0, 0, 0, 0, 0, 1, 0, 0,
         0, 0, 1, 0, 0, 0, 0, 0,

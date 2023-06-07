@@ -1,4 +1,4 @@
-// Copyright[2023] <Joao Felipe Slva Pereira>
+// Copyright[2023] <Joao Felipe Silva Pereira>
 #include "./rainhas.hpp"
 #include <vector>
 #include <algorithm>
