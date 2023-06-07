@@ -1,0 +1,4 @@
+com o g++ e os demais programas instalados 
+digite make neste diretorio 
+
+https://github.com/JF3lip3/trabalho-mp
